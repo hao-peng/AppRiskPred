@@ -1,9 +1,11 @@
 /**********
 Training for NBC model
 Author: Hao Peng (penghATpurdue.edu)
-Last updated time: Feb 25, 2014
+Last updated time: Sep 17, 2015
 **********/
+#ifdef USE_OMP
 #include <omp.h>
+#endif
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>

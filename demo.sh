@@ -4,6 +4,8 @@ FOLD=2
 FIX_HYP=0
 PRED_MODE=2
 
+mkdir -p outputs
+
 cd outputs
 echo "split data"
 ../bin/split ../data/demo.csv demo ${FOLD}

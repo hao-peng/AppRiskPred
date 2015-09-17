@@ -3,7 +3,9 @@ header files for HMNB model
 Author: Hao Peng (penghATpurdue.edu)
 Last updated time: Feb 25, 2014
 **********/
+#ifdef USE_OMP
 #include <omp.h>
+#endif
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
