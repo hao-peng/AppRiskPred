@@ -1,13 +1,13 @@
-OPTIONS = -O2
-#OPTIONS = -fopenmp -O2
-OUTPUT_DIR = ../bin/
+OPTIONS=-O2
+#OPTIONS=-fopenmp -O2
+OUTPUT_DIR=../bin/
 
 all: MKDIR ../bin/hmnb_train ../bin/hmnb_pred ../bin/mnb_pred \
 		../bin/mnb_train ../bin/nb_train ../bin/nb_pred \
 		../bin/nbc_train ../bin/nbc_pred
 
 MKDIR:
-	mkdir -p OUTPUT_DIR
+	mkdir -p ${OUTPUT_DIR}
 
 clean:
 	rm -f *.o
